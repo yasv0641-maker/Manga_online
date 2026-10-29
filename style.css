@@ -1,17 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Isometra&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-
-/*DESING GLOBAL*/
-*{
-    box-sizing:border-box;/*Aumenta a altura e largurada caixa elementos*/
-    margin:0;
-    padding:0;
+/* DESIGNER GLOBAL*/
+* {
+    box-sizing: border-box; /* Aumenta a altura e a largura da caixa de elementos*/
+    margin: 0;
+    padding: 0;
 }
 
-body {
-    font-family: 'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
-    background-color: #ff7300;
-    color: rgba(17,0,255,0.8560);
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212; /* Muda a cor do fundo*/
+    color: #ffff;/* Muda a cor da letra*/
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -20,41 +19,43 @@ body {
 }
 
 /*Cabeçalho*/
-.header{
+.header {
     text-align: center;
     margin-bottom: 20px;
 }
 
-.h1{
-    font-family: 'Isometra', sans-serif;
-    font-size: 1.8em; /*REM- Unidade de medida relativa ao tamanho da fonte do elemento perfeit para sites responsivos*/
-    color:brown; /*Mudar a cor de texto*/
+.h1 {
+    font-family: 'Bungee', sans-serif;
+    font-size: 1.8rem;/*REM - Unidade de medida relativa, perfeita para sites responsivos*/
+    color: #f39c12;/* Mudar a cor de texto*/
     font-style: normal;
 }
 
-.banner-container{
+.banner-container {
     border-radius: 8px;
     overflow: hidden;
     display: flex;
     margin-bottom: 20px;
 }
+
 /*CONTAINER PRINCIPAL DO LEITOR*/
 
-.Reader-container{
-    display:flex;
+.reader-container {
+    display: flex;
     flex-direction: column;
-    align-items: vonter;
+    align-items: center;
     max-width: 700px;
-    width: 100px; 
+    width: 100%;
 }
 
-.page-wrapper{
-    background-color:#1eff00;
+.page-wrapper {
+    background-color: #1e1e1e;
     border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0, 0,0, 0.5);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
     overflow: hidden;
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-bottom: 20px;
     width: 100%;
 }
@@ -65,17 +66,18 @@ body {
     display: block;
 }
 
-.controls{
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
-   width: 400px;
-   gap: 15px;
+.controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 400px;
+    gap: 15px;
 }
 
-.BTN{
-    background-color: #121212;
-    color:#ff0;
+.btn {
+    background-color: #f39c12;
+    color: #121212;
     border: none;
     padding: 10px 20px;
     font-size: 1rem;
@@ -85,27 +87,32 @@ body {
     transition: background-color 0.2s ease, transform 0.1s ease;
 }
 
-.btn:hover{
-    background-color: #0e0e0e;
+.btn:hover {
+    background-color: #e67e22;
 }
 
 .btn:active{
     transform: scale(0.98);
 }
 
-.page-counter{
+.btn:disabled {
+    background-color: #444;
+    color: #888;
+    cursor: not-allowed;
+}
+
+.page-counter {
     font-size: 1rem;
     font-weight: 500;
 }
 
-
 /*SMARTPHONES*/
-@media(max-width: 768%) {
-    body{
+@media (max-width: 768px) {
+    body {
         padding: 10px;
     }
 
-    .h1{
+    .h1 {
         font-size: 1.3rem;
     }
 
@@ -113,25 +120,25 @@ body {
         flex-wrap: wrap;
         justify-content: center;
         gap: 10px;
-
     }
 
-    .btn{
+    .btn {
         flex: 1;
         min-width: 120px;
         padding: 12px;
         font-size: 0.95rem;
     }
 
-    .page-counter{
-        width:100px;
-        tetx-aling: center;
+    .page-counter {
+        width: 100%;
+        text-align: center;
         order: -1;
     }
 }
+
 /*CELULARES ANTIGOS*/
 @media (max-width: 480px) {
-
+    
     .h1{
         font-size: 1rem;
     }
@@ -145,5 +152,3 @@ body {
         font-size: 0.85rem;
     }
 }
-
-    

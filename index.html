@@ -3,31 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet"href="style.css">
-    <title>mangá online</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Mangá Online</title>
 </head>
- <body>
-    <head class="header">
+<body>
+    <header class="header">
         <!--1 PASSO - BANNER-->
         <div class="banner-container">
-            <img src="./assets/dragonballbanner.jpg" alt="Banner do Dragon ball">
+            <img src="./Assests/dragonballbanner.jpg" alt="BANNER">
         </div>
-        <!--2 PASSO - DRAGON BALL-->
+        <!--2 PASSO - TITULO-->
         <div>
             <h1 class="h1">Dragon Ball - Volume 1</h1>
         </div>
-    </head>
+    </header>
     <main class="reader-container">
         <!--IMAGEM DA PAGINA ATUAL-->
         <div class="page-wrapper">
-            <img src="./assets/dragon-ball-vol-1-s Capa.jpg" alt="capa">
+            <img id="manga-page" src="./Assests/dragon-ball-vol-1-s Capa.jpg" alt="CAPA">
         </div>
         <!--PAINEL DE CONTROLES-->
         <div class="controls">
-        <button class="btn">Anterior</button>
-        <span class="page-counter">pagina 1 de 31</span>
-        <button class="btn>Próximo"></button>        
-        </div>
-    </main>
-</body>    
+            <button id="btnPrev" class="btn">Anterior</button>
+            <span id="page-counter" class= "page-counter">pagina 1 de 31</span>
+            <button id="btnNext" class="btn"></button>
+        </div>        
+    </main>   
+    <script src="script.js"></script>
+</body>
 </html>
